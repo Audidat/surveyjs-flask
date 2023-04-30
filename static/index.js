@@ -3,8 +3,18 @@ var SurveyComponent = Vue.component("survey-component", {
     name: "survey-component",
     data() {
         const survey = new Survey.Model(json);
-        survey.onComplete.add((sender, options) => {
-            console.log(JSON.stringify(sender.data, null, 3));
+        survey.onComplete.add(async (sender, options) => {
+            const stringJSON = JSON.stringify(sender.data);
+            console.log(JSON.stringify(stringJSON));
+            // No controlamos posible error
+            await fetch("/guardar_respuestas", {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: stringJSON
+            })
+            window.location = "/"
         });
         return {
             survey: survey

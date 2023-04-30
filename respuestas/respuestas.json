@@ -1,0 +1,11 @@
+{
+  "first_name": "Paco",
+  "last_name": "Romero",
+  "ssn": "123456789",
+  "birthdate": "2023-04-14",
+  "symptoms": [
+    "Fever or chills",
+    "New and persistent cough",
+    "Fatigue"
+  ]
+}

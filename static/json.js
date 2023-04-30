@@ -17,14 +17,14 @@ const json = {
                     "elements": [
                         {
                             "type": "text",
-                            "name": "first-name",
+                            "name": "first_name",
                             "title": "First name",
                             "isRequired": true,
                             "maxLength": 25
                         },
                         {
                             "type": "text",
-                            "name": "last-name",
+                            "name": "last_name",
                             "startWithNewLine": false,
                             "title": "Last name",
                             "isRequired": true,
@@ -85,7 +85,7 @@ const json = {
                 }
             ]
         },
-        {
+        /*{
             "name": "contacts",
             "title": "Contacts",
             "elements": [
@@ -193,7 +193,7 @@ const json = {
                     "title": "Signature"
                 }
             ]
-        }
+        }*/
     ],
     "completeText": "Submit",
     "showPreviewBeforeComplete": "showAnsweredQuestions",
